@@ -1,0 +1,59 @@
+\ifx\undefined\BibEmph\def\BibEmph#1{#1}\else\fi
+\ifx\undefined\href\def\href#1#2{#2}\else\fi
+\ifx\undefined\url\def\url#1{\texttt{#1}}\else\fi
+\ifx\undefined\urlprefix\def\urlprefix{URL: }\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\urlprefix\url{#1}}\else\fi
+\ifx\undefined\BibUrlDate\long\def\BibUrlDate#1{({%
+\cyr\cyrd\cyra\cyrt\cyra\
+\cyro\cyrb\cyrr\cyra\cyrshch\cyre\cyrn\cyri\cyrya}: #1)}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{#1}\else\fi
+
+\begin{thebibliography}{1}
+\addcontentsline{toc}{section}{\bibname}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+
+
+\bibitem{Theorem_FLP}
+\selectlanguageifdefined{english}
+\newblock M. Fisher, N. Lynch, M. Paterson
+\newblock \em  Impossibility of Distributed Consensus with One Faulty Process\em.
+\newblock ACM, Volume 32, Issue 2;
+\newblock 1985.
+
+\bibitem{CAP_Theorem}
+\selectlanguageifdefined{english}
+\newblock S. Gilb ert, N. Lynch, A. Nancy
+\newblock \em  Perspectives on the CAP Theorem\em.
+\newblock 2012.
+
+\bibitem{Glushkov}
+\selectlanguageifdefined{russian}
+\newblock Глушков Егор Александрович
+\newblock \em Адаптация консенсуса и экосистемы для фреймворка 
+Crowdfunding.BGX\em.
+\newblock Санкт-Петербургский государственный университет
+\newblock Санкт-Петербург.
+\newblock 2020.
+
+\bibitem{Blockvhain_review}
+\selectlanguageifdefined{english}
+\newblock Leila Ismail
+\newblock \em A Review of Blockchain Architecture and Consensus Protocols: Use Cases, Challenges, and Solutions\em.
+\newblock 2019.
+
+\bibitem{Byzantine_Fault_Tolerance}
+\selectlanguageifdefined{english}
+\newblock Miguel Castro, Barbara Liskov
+\newblock \em Practical Byzantine Fault Tolerance\em.
+\newblock 1999.
+
+\bibitem{Raft_search}
+\selectlanguageifdefined{english}
+\newblock Diego Ongaro, John Ousterhout
+\newblock \em In Search of an Understandable Consensus Algorithm\em.
+\newblock 2014.
+
+\end{thebibliography}
+\bibliographystyle{gost705}
