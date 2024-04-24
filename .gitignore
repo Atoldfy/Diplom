@@ -17,6 +17,7 @@
 *.vrb
 *-eps-converted-to.pdf
 *.idea
+*.pdf
 
 # MetaPost output
 *.0
